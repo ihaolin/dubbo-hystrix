@@ -55,6 +55,7 @@ public class HelloWorldCommandTest {
             @Override
             public void onCompleted() {
                 // nothing needed here
+                System.err.println("onCompleted");
             }
 
             @Override
@@ -76,7 +77,7 @@ public class HelloWorldCommandTest {
 
             @Override
             public void call(String v) {
-                System.out.println("onNext: " + v);
+                System.err.println("onNext: " + v);
             }
 
         });
